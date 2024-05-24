@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 entrypoint = "main.go"
 run = ["go", "run", "."]
 
 modules = ["go-1.21:v2-20231201-3b22c78"]
+=======
+run = "cowsay Configure me!"
+>>>>>>> af0d8d6ca75d7f29b46591fd52c6439aa9bfadd2
 
 [nix]
 channel = "stable-23_11"
 
+<<<<<<< HEAD
 [gitHubImport]
 requiredFiles = [".replit"]
 
@@ -13,3 +18,7 @@ requiredFiles = [".replit"]
 run = ["go", "run", "."]
 ignorePorts = false
 deploymentTarget = "gce"
+=======
+[deployment]
+run = ["sh", "-c", "cowsay Configure me!"]
+>>>>>>> af0d8d6ca75d7f29b46591fd52c6439aa9bfadd2
